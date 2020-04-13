@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import CreateDialog from '../components/CreateDialog' ;
 
-const Header = ({muscles, onCreateExercice}) => {
+const Header = ({onCreateExercice}) => {
  return (
    <Fragment>
      <AppBar style={{ position:"relative" }} >
@@ -12,7 +12,7 @@ const Header = ({muscles, onCreateExercice}) => {
           </Typography>
           <CreateDialog 
           onCreateExercice={onCreateExercice}
-          muscles={muscles} />
+             />
         </Toolbar>
       </AppBar>
    </Fragment>
